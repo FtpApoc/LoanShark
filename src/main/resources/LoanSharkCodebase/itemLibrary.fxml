@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoanSharkCodebase.Controllers.ItemLibraryController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="750.0" layoutX="52.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" styleClass="PaneRectangle" width="1337.0" />
+            <Button layoutX="115.0" layoutY="61.0" onAction="#GoBack" styleClass="GoBackButton" text="Go Back" />
+            <TableView fx:id="tableView" layoutX="111.0" layoutY="154.0" prefHeight="604.0" prefWidth="1207.0">
+              <columns>
+                <TableColumn fx:id="itemNameCol" prefWidth="282.0" styleClass="ColumnHeaderBackground" text="Item Name" />
+                <TableColumn fx:id="copiesAvCol" minWidth="0.0" prefWidth="229.0" styleClass="ColumnHeaderBackground" text="Copies Available" />
+                  <TableColumn fx:id="genreCol" minWidth="0.0" prefWidth="208.0" styleClass="ColumnHeaderBackground" text="Genre" />
+                  <TableColumn fx:id="readLevCol" minWidth="0.0" prefWidth="234.0" styleClass="ColumnHeaderBackground" text="Reading Level" />
+                  <TableColumn fx:id="viewItemPage" minWidth="0.0" prefWidth="252.0" styleClass="ColumnHeaderBackground" text="View Item Page" />
+              </columns>
+            </TableView>
+
+             <!-- Top Of Page !-->
+            <TextField fx:id="searchBar" layoutX="266.0" layoutY="53.0" prefHeight="25.0" prefWidth="865.0" promptText="Enter An Item Name..." styleClass="InfoInputField" />
+            <Button layoutX="1153.0" layoutY="53.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="56.0" prefWidth="164.0" styleClass="ConfirmButton" text="Search" />
+
+
+<!--             &lt;!&ndash; Sidebar !&ndash;&gt;-->
+<!--            <Rectangle arcHeight="5.0" arcWidth="5.0" height="601.0" layoutX="75.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" styleClass="BoxOutRectangle" width="257.0" />-->
+
+<!--             <Label layoutX="175.0" layoutY="169.0" styleClass="LabelMedium" text="Filter" />-->
+
+<!--             <Label layoutX="115.0" layoutY="238.0" styleClass="LabelMedium" text="Available:" />-->
+<!--                <CheckBox fx:id="chkAvailable" layoutX="253.0" layoutY="248.0" mnemonicParsing="false" styleClass="AdminCheckbox" />-->
+
+<!--             &lt;!&ndash; Item Type !&ndash;&gt;-->
+<!--            <Label layoutX="147.0" layoutY="320.0" styleClass="LabelMedium" text="Item Type" />-->
+
+<!--             <Label layoutX="138.0" layoutY="386.0" styleClass="LabelMedium" text="Book:" />-->
+<!--                <CheckBox fx:id="chkBook" layoutX="253.0" layoutY="394.0" mnemonicParsing="false" selected="true" styleClass="AdminCheckbox" />-->
+
+<!--             <Label layoutX="131.0" layoutY="435.0" styleClass="LabelMedium" text="Movie:" />-->
+<!--                <CheckBox fx:id="chkMovie" layoutX="253.0" layoutY="445.0" mnemonicParsing="false" selected="true" styleClass="AdminCheckbox" />-->
+
+<!--             &lt;!&ndash;Fiction/Non Fiction !&ndash;&gt;-->
+<!--            <Label layoutX="94.0" layoutY="537.0" styleClass="LabelMedium" text="Fiction/Non Fiction" />-->
+
+<!--             <Label layoutX="131.0" layoutY="605.0" styleClass="LabelMedium" text="Fiction" />-->
+<!--                <CheckBox fx:id="chkFiction" layoutX="253.0" layoutY="615.0" mnemonicParsing="false" selected="true" styleClass="AdminCheckbox" />-->
+
+<!--            <Label layoutX="98.0" layoutY="656.0" styleClass="LabelMedium" text="Non-Fiction:" />-->
+<!--                <CheckBox fx:id="chkNonFiction" layoutX="253.0" layoutY="666.0" mnemonicParsing="false" selected="true" styleClass="AdminCheckbox" />-->
+
+
+         </children></AnchorPane>
+   </center>
+
+    <stylesheets>
+        <URL value="@../CSS/LoanShark.css" />
+    </stylesheets>
+
+</BorderPane>

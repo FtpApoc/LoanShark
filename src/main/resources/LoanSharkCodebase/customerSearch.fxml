@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1278.0" styleClass="root" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoanSharkCodebase.Controllers.CustomerSearchController">
+   <center>
+      <AnchorPane prefHeight="633.0" prefWidth="1326.0" styleClass="AnchorPaneMedium" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle height="576.0" layoutX="176.0" layoutY="117.0" styleClass="PaneRectangle" width="1088.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="222.0" layoutX="231.0" layoutY="447.0" styleClass="BoxOutRectangle" width="435.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="222.0" layoutX="771.0" layoutY="447.0" styleClass="BoxOutRectangle" width="435.0" />
+
+            <ImageView fitHeight="187.0" fitWidth="247.0" layoutX="592.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/LoanSharkLogo.png" />
+               </image>
+            </ImageView>
+
+            <Button fx:id="btnGoBack" layoutX="188.0" layoutY="126.0" onAction="#GoBack" prefHeight="40.0" prefWidth="101.0" styleClass="GoBackButton" text="Go Back"> </Button>
+
+            <!-- Left Side of the screen !-->
+            <Label fx:id="lblCustomerSearch" layoutX="225.0" layoutY="345.0" prefHeight="121.0" prefWidth="445.0" styleClass="LabelMedium" text="Enter to view the Customers Page"> </Label>
+
+            <TextField fx:id="searchField" layoutX="307.0" layoutY="473.0" prefHeight="50.0" prefWidth="284.0" promptText="Customer ID" styleClass="InfoInputField"> </TextField>
+
+            <Button fx:id="btnCustomerSearch" onAction="#customerSearch" alignment="CENTER" layoutX="371.0" layoutY="550.0" prefHeight="40.0" prefWidth="157.0" styleClass="ConfirmButton" text="Search"> </Button>
+
+            <Label fx:id="lblOperationFailed" layoutX="228.0" layoutY="614.0" prefHeight="64.0" prefWidth="439.0" styleClass="LabelOperationFailed" />
+
+
+            <!-- Right Side of the screen !-->
+            <Label fx:id="lblGenerateInstruction" layoutX="771.0" layoutY="345.0" prefHeight="121.0" prefWidth="445.0" styleClass="LabelMedium" text="Press Button to Generate Customer ID" />
+
+            <Label fx:id="lblCustomerID" layoutX="778.0" layoutY="441.0" prefHeight="121.0" prefWidth="216.0" styleClass="LabelMedium" text="Customer ID:" />
+
+            <Label fx:id="lblNewCustNum" layoutX="989.0" layoutY="441.0" prefHeight="121.0" prefWidth="173.0" styleClass="LabelMedium" />
+
+            <Button fx:id="btnAddToDatabase" onAction="#addToDB" alignment="CENTER" layoutX="871.0" layoutY="550.0" prefHeight="56.0" prefWidth="237.0" styleClass="ConfirmButton" text="Add to Database" />
+
+            <Label fx:id="lblAddedToDB" layoutX="770.0" layoutY="614.0" prefHeight="64.0" prefWidth="439.0" styleClass="LabelMedium" />
+
+         </children></AnchorPane>
+   </center>
+
+   <stylesheets>
+      <URL value="@../CSS/LoanShark.css" />
+   </stylesheets>
+
+</BorderPane>

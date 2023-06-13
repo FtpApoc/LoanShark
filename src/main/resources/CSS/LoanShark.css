@@ -1,0 +1,128 @@
+/* LoanShark.css */
+
+.root{
+    -fx-background-color: #2b2b2b;
+    -fx-font-family: Segoe UI;
+    -fx-pref-width: 1440;
+    -fx-pref-height: 810;
+}
+/*.AnchorPaneMedium{*/
+/*    -fx-pref-height: "700.0";*/
+/*    -fx-pref-width: "1100.0";*/
+/*    -fx-background-color: #2b2b2b;*/
+/*}*/
+
+
+/* Multiple Uses */
+.PaneRectangle{
+    -fx-fill: #555555;
+    -fx-arc-height: 60;
+    -fx-arc-width: 60;
+    -fx-alignment: "CENTER";
+}
+.BoxOutRectangle{
+    -fx-fill: #777777;
+    -fx-border-color: #777777;
+    -fx-arc-height: 40;
+    -fx-arc-width: 40;
+    -fx-alignment: "CENTER";
+}
+.ConfirmButton{
+    -fx-background-color: #00a4b7;
+    -fx-text-fill: "WHITE";
+    -fx-font-size: 26;
+    -fx-font-family: Segoe UI;
+    -fx-background-radius: 5;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+}
+.GoBackButton{
+    -fx-background-color: #00a4b7;
+    -fx-text-fill: "WHITE";
+    -fx-font-size: 19;
+    -fx-font-family: Segoe UI;
+    -fx-background-radius: 30;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+}
+
+.LabelMedium{
+    -fx-text-fill: "WHITE";
+    -fx-font-size: 26;
+    -fx-font-family: Segoe UI;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+    -fx-wrap-text: true;
+}
+.LabelOperationFailed{
+    -fx-text-fill: "WHITE";
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+    -fx-font-family: Segoe UI;
+    -fx-font-style: italic;
+    -fx-font-size: 26;
+    -fx-text-fill: #ff6b68;
+}
+.InfoInputField{
+    -fx-font-family: Segoe UI;
+    -fx-font-size: 26;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+}
+.OptionButton{
+    -fx-font-family: Segoe UI;
+    -fx-font-size: 30;
+    -fx-text-fill: #555555;
+    -fx-background-radius: 35;
+}
+
+.HeadingLabel{
+    -fx-font-family: Segoe UI;
+    -fx-font-style: italic;
+    -fx-font-size: 53;
+    -fx-text-fill: "WHITE";
+    -fx-text-alignment: "CENTER";
+    -fx-alignment: "CENTER";
+}
+
+.AdminCheckbox{
+    -fx-background-size: 25;
+    -fx-scale-x: 1.35;
+    -fx-scale-y: 1.35;
+}
+.table-view{
+    -fx-background-color: transparent;
+
+}
+.ColumnHeaderBackground{
+    -fx-background-color: #666666;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 26;
+    -fx-font-family: Segoe UI;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+    -fx-wrap-text: true;
+}
+.TableButton{
+    -fx-background-color: #00a4b7;
+    -fx-text-fill: "WHITE";
+    -fx-font-size: 20;
+    -fx-font-family: Segoe UI;
+    -fx-background-radius: 5;
+    -fx-alignment: "CENTER";
+    -fx-text-alignment: "CENTER";
+}
+/*.ConfirmButton{*/
+/*    -fx-font: Segoe UI;*/
+/*    -fx-background-color: #00a4b7;*/
+/*    -fx-background-radius: 7;*/
+/*}*/
+/*.HomepageButton{*/
+/*    -fx-text-fill: #555555;*/
+/*    -fx-background-radius: 35;*/
+/*}*/
+/*.TitleItalic{*/
+/*    -fx-font-style: italic;*/
+/*    -fx-font-size: 53px;*/
+/*    -fx-font: Segoe UI;*/
+/*}*/

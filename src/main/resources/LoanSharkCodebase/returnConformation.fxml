@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoanSharkCodebase.Controllers.ReturnConfirmationController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="651.0" layoutX="177.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" styleClass="PaneRectangle" width="1105.0" />
+                <Button layoutX="191.0" layoutY="96.0" onAction="#GoBack" styleClass="GoBackButton" text="Go Back" />
+                <Label layoutX="589.0" layoutY="98.0" styleClass="HeadingLabel" text="Return Page" />
+
+                <Button fx:id="btnReturnItem" alignment="CENTER" layoutX="966.0" layoutY="463.0" onAction="#returnItem" prefHeight="56.0" prefWidth="237.0" styleClass="ConfirmButton" text="Return Item" />
+
+                <Rectangle fx:id="rctSaveInFile" arcHeight="5.0" arcWidth="5.0" height="168.0" layoutX="919.0" layoutY="543.0" styleClass="BoxOutRectangle" visible="false" width="329.0" />
+                <Button fx:id="btnSaveInFile" alignment="CENTER" layoutX="965.0" layoutY="640.0" onAction="#saveInFile" prefHeight="56.0" prefWidth="237.0" styleClass="ConfirmButton" text="Save in File" visible="false" />
+                <Label fx:id="lblSaveInFile" layoutX="983.0" layoutY="577.0" prefHeight="38.0" prefWidth="202.0" styleClass="LabelMedium" text="Item Returned!" visible="false" />
+
+                <!-- Top Section !-->
+                <Label layoutX="271.0" layoutY="199.0" prefHeight="38.0" prefWidth="199.0" styleClass="LabelMedium" text="Event Reference:" />
+                    <Label fx:id="EvR" layoutX="516.0" layoutY="198.0" prefHeight="38.0" prefWidth="205.0" styleClass="LabelMedium" />
+
+                <Label layoutX="218.0" layoutY="243.0" prefHeight="38.0" prefWidth="258.0" styleClass="LabelMedium" text="Customer Reference:" />
+                    <Label fx:id="CuR" layoutX="513.0" layoutY="242.0" prefHeight="38.0" prefWidth="208.0" styleClass="LabelMedium" />
+
+                <Label layoutX="275.0" layoutY="287.0" prefHeight="38.0" prefWidth="207.0" styleClass="LabelMedium" text="Item Reference:" />
+                    <Label fx:id="ItR" layoutX="511.0" layoutY="286.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+                <Label layoutX="320.0" layoutY="333.0" prefHeight="38.0" prefWidth="163.0" styleClass="LabelMedium" text="Item Name:" />
+                    <Label fx:id="ItN" layoutX="482.0" layoutY="333.0" prefHeight="38.0" prefWidth="269.0" styleClass="LabelMedium" />
+
+                <!-- Middle Section !-->
+                <Label layoutX="296.0" layoutY="405.0" prefHeight="38.0" prefWidth="193.0" styleClass="LabelMedium" text="Date Loaned:" />
+                    <Label fx:id="DtL" layoutX="512.0" layoutY="404.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+                <Label layoutX="286.0" layoutY="452.0" prefHeight="38.0" prefWidth="206.0" styleClass="LabelMedium" text="Time Of Loan:" />
+                    <Label fx:id="ToL" layoutX="512.0" layoutY="451.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+
+                <!-- Bottom Section !-->
+                <Label layoutX="203.0" layoutY="551.0" prefHeight="38.0" prefWidth="319.0" styleClass="LabelMedium" text="Latest Return Date:" />
+                    <Label fx:id="DtR" layoutX="512.0" layoutY="550.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+                <Label layoutX="271.0" layoutY="589.0" prefHeight="38.0" prefWidth="253.0" styleClass="LabelMedium" text="Item Version:" />
+                    <Label fx:id="ItV" layoutX="513.0" layoutY="588.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+                <Label layoutX="320.0" layoutY="629.0" prefHeight="38.0" prefWidth="193.0" styleClass="LabelMedium" text="Item Late:" />
+                    <Label fx:id="ItL" layoutX="513.0" layoutY="628.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+                <Label layoutX="320.0" layoutY="670.0" prefHeight="38.0" prefWidth="206.0" styleClass="LabelMedium" text="Late Fee:" />
+                    <Label fx:id="LtF" layoutX="513.0" layoutY="669.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" />
+
+
+                <!-- Right Side !-->
+                <Label layoutX="824.0" layoutY="331.0" prefHeight="38.0" prefWidth="237.0" styleClass="LabelMedium" text="Cost Breakdown:" />
+                    <Label fx:id="CtB" layoutX="1072.0" layoutY="331.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" text="No Charge" />
+
+                <Label layoutX="895.0" layoutY="374.0" prefHeight="38.0" prefWidth="170.0" styleClass="LabelMedium" text="Total Cost:" />
+                    <Label fx:id="TlC" layoutX="1072.0" layoutY="374.0" prefHeight="38.0" prefWidth="210.0" styleClass="LabelMedium" text="No Charge" />
+
+
+            </children></AnchorPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@../CSS/LoanShark.css" />
+    </stylesheets>
+
+</BorderPane>
