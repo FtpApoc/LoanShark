@@ -1,10 +1,11 @@
-This Zip Folder Contains the Code, Assets and .SQL file for the BS2202 Project
+This Zip Folder Contains the Code, Assets and .SQL file for the BS2202 Project, Loanshark.
 
-The .SQL file can be loaded into a MySQL workbench, launched from an installer the default port and the program will read it
+This is a library System prototype.
 
-I have a project Demonstration on the 13th and i will demonstrate the features and answer any questions.
+The .SQL file can be loaded into a MySQL workbench, launched from an installer the default port and the program will read it. 
+Port 3306 with legacy Auth method.
+The Password for this operation is DevPass
 
-Also Enclosed is the Google doc Writing report for the assignment
 
 
 Some Data that may be useful:
@@ -15,9 +16,5 @@ Example ID Number: IT000193
 Example Admin Account: 
 Username: Admin
 Password: Password
-
-Example Regular Account:
-Username: Regular
-Password: 251221 (christmas day '21) 
 
 The regular account does not have access to make new accounts, but feel free to use the admin account to make one.
